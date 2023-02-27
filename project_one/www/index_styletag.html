@@ -1,0 +1,808 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+
+
+<!-- font style -->
+    <style type="text/css">
+
+    	@font-face {
+    		 font-family: Roc;
+             src: url(fonts/Roc-Grotesk/rocgroteskwide-black.otf) format("truetype");
+
+         }
+
+         @font-face {
+    		 font-family: RocMedium;
+             src: url(fonts/Roc-Grotesk/rocgrotesk-medium.otf) format("truetype");
+
+         }
+
+         @font-face {
+    		 font-family: RocRegular;
+             src: url(fonts/Roc-Grotesk/rocgroteskcomp-regular.otf) format("truetype");
+
+         }
+
+    </style>
+
+</head>
+
+<!-- body -->
+<body style="background:#e7e8d5;"><div style="width:1250px;margin:0 auto;padding:20px;">
+
+
+<!-- title & navigation -->
+<div style="display: flex;padding: 15px 0 75px 0;">
+
+	<!-- title -->
+	<div style=";height:40px;align-items: center;display: flex;align-items: center;font-family:'Roc', sans-serif;font-size:1.5em;font-weight: 900;">
+		Space.
+	</div>
+
+	<!-- middle navigation -->
+	<div style="height:40px;flex:1;font-family: 'Sora', sans-serif;letter-spacing: 1px;display: flex;align-items: center;">
+		<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding: 0 30px 0 50px;" href="">
+			Home
+		</a>
+		<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding-right: 30px;" href="">
+			Marketplace
+		</a>
+		<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding-right: 30px;" href="">
+			Blog
+		</a>
+		<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;" href="">
+			Road Map.
+		</a>
+	</div>
+
+	<!-- right navigation -->
+	<div style="height:40px;font-family: 'Sora', sans-serif;letter-spacing: 2px;display: flex;align-items: center;">
+		<img style="width:20px;height:20px;padding:0 30px;" src="\images\606807.png">
+		<button style="border-color: black;padding: 18px 28px; margin: 0 10px 0 0px;background-color: #c6fb6e;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+			<a style="text-decoration: none;color:black;font-size: 1em;font-weight: 700;white-space: nowrap;letter-spacing: 1px;" href="">
+				Connect Wallet
+			</a>
+		</button>
+		<button style="border-color: black;padding: 18px 28px;background-color: white;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+			<a style="text-decoration: none;color:black;font-size: 1em;font-weight: 700;letter-spacing: 1px;" href="">
+				EN
+			</a>
+		</button>
+	</div>
+</div>
+
+
+<!-- about -->
+<div style="display: flex;">
+
+	<!-- about title & Description -->
+	<div style="height:600px; flex: 1;">
+		<div style="font-family:'RocMedium', sans-serif;font-size:5em;font-weight: 300;line-height: 100%;margin: 0;padding-top: 65px">
+			Discover Collect Sell Digitial NFT.
+		</div>
+		<div style ="font-family: 'Sora', sans-serif;letter-spacing: 1px;font-size: 1.9em;font-weight: 700;line-height: 150%;margin: 0;padding-top:20px;padding-bottom: 30px;">
+			Generate 10,000 NFT Collection Only by uploading the layers, and get ready to sell your collection.
+		</div>
+		<button style="border-color: black;padding: 18px 28px; margin: 0 10px 0 0px;background-color: #c6fb6e;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+			<a style="text-decoration: none;color:black;font-size: 1em;font-weight: 700;white-space: nowrap;letter-spacing: 1px;" href="">
+				Connect Wallet
+			</a>
+		</button>
+		<button style="border-color: black;padding: 18px 28px;background-color: white;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+			<a style="text-decoration: none;color:black;font-size: 1em;font-weight: 700;letter-spacing: 1px;" href="">
+				Join Discord
+			</a>
+		</button>
+	</div>
+
+	<!-- NFT Card -->
+	<div style="height:600px; flex: 1;text-align: center;padding-left:10%;font-family: 'Sora', sans-serif;letter-spacing: 0px;">
+
+		<!-- Top Half of Card -->
+		<div style="display: flex; flex-direction: column; border: 2px solid;position: absolute;height: 26em;width: 19em;margin-left: 8em;margin-top: 2em;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;">
+			<div style="border-bottom: 2px solid;width: 19em;height: 4em;">
+				<p style="text-align: center;font-size: 1.3em;font-weight: 700;">
+					NFT Killer- 2.0
+				</p>
+			</div>
+			<div style="border-bottom: 2px solid;width: 19em;height: 18em;">
+				<img style="width: 19em;height: 18em;" src="\images\head.png">
+			</div>
+
+		<div style="width: 19em;height: 4em;display: flex;flex-direction: row;">
+			<div style="border-right: 2px solid;width: 9.5em;height: 4em;flex: 1;">
+				<p style="text-align: center;font-size: 1.3em;font-weight: 900;">
+					2.3 ETH
+				</p>
+			</div>
+			<div style="width: 9.5em;height: 4em;">
+				<p style="text-align: center;font-size: 1.3em;">
+					00:12:34
+				</p>
+			</div>
+		</div>
+			
+		</div>
+
+		<!-- Bottom Half of Card -->
+		<div style="border: 1px solid;position: absolute;height: 4em;width: 19em;margin-left: 8em;margin-top: 29em;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;">
+			<p style="text-align: center;padding: .5em 0;font-size: 1em;font-weight: 900;">
+				Bid Now
+			</p>
+		</div>
+
+		<!-- Circle Image Behind Card -->
+		<span style="height: 35em;width: 35em;background-color: #bbb;border-radius: 50%;border: 2px solid black; display: inline-block;background-image: linear-gradient(145deg, #6febaf 45.45%, #000000 45.45%, #000000 50%, #6febaf 50%, #6febaf 95.45%, #000000 95.45%, #000000 100%);background-size: 38.36px 26.86px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+		</span>
+	</div>
+</div>
+
+
+<!-- Number of Collections/ Art -->
+<div style="padding: 3em 0;display: flex;">
+	<div style="height:200px;width: 416px;">
+		<div style="padding: 50px;">
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size:5em;font-weight: 700;line-height: 100%;margin: 0;">
+				1.5k+
+			</div>
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size: 1.3em;font-weight: 700;line-height: 150%;margin: 0;">
+				Collections
+			</div>
+		</div>
+	</div>
+	<div style="height:200px;width: 416px;">
+		<div style="padding: 50px;">
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size:5em;font-weight: 700;line-height: 100%;margin: 0;">
+				102k+
+			</div>
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size: 1.3em;font-weight: 700;line-height: 150%;margin: 0;">
+				Art Work
+			</div>
+		</div>
+	</div>
+	<div style="height:200px;width: 416px;">
+		<div style="padding: 50px;">
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size:5em;font-weight: 700;line-height: 100%;margin: 0;">
+				3.2k+
+			</div>
+			<div style="font-family: 'Sora', sans-serif;text-align: left;font-size: 1.3em;font-weight: 700;line-height: 150%;margin: 0;">
+				Artists
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Points -->
+<div style="display: flex;justify-content: center;border: 2px solid;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background-color: white;">
+	<div style="flex: 1;border-right: 2px solid;height: 300px;">
+		<div style="padding: 50px;">
+			<div>
+				<img style="width:60px;height:60px;text-align: left;padding-bottom: 2em;" src="\images\verified.png">
+			</div>
+			<div style="font-family: 'RocMedium', sans-serif;text-align: left;font-size: 1.3em;font-weight: 700;line-height: 100%;margin: 0;">
+				Strong Security
+			</div>
+			<div style="font-family: 'Sora', sans-serif;font-size: .9em;font-weight: 700;line-height: 150%;margin: 0;padding-top:10px;letter-spacing: 1px;text-align: left;width: 20em;">
+				Secure transaction and record information with 2-factor authentication (2FA)
+			</div>
+		</div>
+	</div>
+	<div style="flex: 1;border-right: 2px solid;height:300px;">
+		<div style="padding: 50px;">
+			<div>
+				<img style="width:60px;height:60px;padding-bottom: 2em;" src="\images\wallet.png">
+			</div>
+			<div style="font-family: 'RocMedium', sans-serif;text-align: left;font-size: 1.3em;font-weight: 700;line-height: 100%;margin: 0;text-align: left;">
+				Payment Options
+			</div>
+			<div style="font-family: 'Sora', sans-serif;text-align: center;font-size: .9em;font-weight: 700;line-height: 150%;margin: 0;padding-top:10px;letter-spacing: 1px;text-align: left;width: 20em;">
+				Flexible payment of methods with Visa, Mastercard, Paypal, bank transfer
+			</div>
+		</div>
+	</div>
+	<div style="flex: 1;height:300px;">
+		<div style="padding: 50px;">
+			<div style="flex: 1;width: 100%;">
+				<img style="width:60px;height:60px;padding-bottom: 2em;" src="\images\check-mark.png">
+			</div>
+			<div style="flex: 1;font-family: 'RocMedium', sans-serif;font-size: 1.3em;font-weight: 700;line-height: 100%;margin: 0;text-align: left;">
+				Market Updated
+			</div>
+			<div style="flex: 1;font-family: 'Sora', sans-serif;text-align: left;font-size: .9em;font-weight: 700;line-height: 150%;margin: 0;padding-top:10px;letter-spacing: 1px;width: 20em;">
+				The most accurate and trusted source for market cap, valuation, and cryptocurrency information
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- discover -->
+<div style="margin-top: 5em;display: flex;">
+
+	<!-- gallary -->
+	<div style="height:390px;flex: 1;border: 2px solid;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);display: flex;">
+		<div style="flex:1;border-right: 2px solid;">
+			<img style="width: 100%;height: 100%" src="\images\abstract.png">
+		</div>
+		<div style="flex:1;border-right: 2px solid;">
+			<img style="width: 100%;height: 100%" src="\images\robo.png">
+		</div>
+		<div style="flex:1;">
+			<img style="width: 100%;height: 100%" src="\images\Blond.png">			
+		</div>
+	</div>
+
+	<!-- discover about -->
+	<div style="padding-left: 0px;height:400px;flex: 1;">
+		<div style="padding: 0 80px;">
+			<div style="margin-top: 0;font-family: 'Sora', sans-serif;font-weight: 700;font-size: 1em;width: 30em;">
+				ABOUT US
+			</div>
+			<div style="font-family:'RocMedium', sans-serif;font-size:3em;font-weight: 300;line-height: 130%;margin: 0;width: 10em;">
+				Discover More Collect and Sell Rare NFTs
+			</div>
+			<div style ="font-family: 'Sora', sans-serif;letter-spacing: 1px;font-size: 1em;font-weight: 700;line-height: 150%;margin: 0;padding-top:10px;padding-bottom: 20px;width: 30em;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumque nostrum veritatis iusto ullam, laboriosam facere numquam est fugiat tempora rem?
+			</div>
+			<div style="font-family: 'Sora', sans-serif;width: 30em;">
+				<button style="border: none; padding: 10px 20px; margin: 0 5px 5px 0px;background-color: black;color: #e7e8d5;font-size: 1em;font-weight: 500;letter-spacing: 1px;white-space: nowrap;">
+					Wide range of platforms
+				</button>
+				<button style="border: none; padding: 10px 20px; margin: 0 5px 0 0px;background-color: black;color: #e7e8d5;font-size: 1em;font-weight: 500;white-space: nowrap;letter-spacing: 1px;white-space: nowrap;">
+					World class artists
+				</button>
+				<button style="border: none; padding: 10px 20px; margin: 0 5px 0 0px;background-color: black;color: #e7e8d5;font-size: 1em;font-weight: 500;white-space: nowrap;letter-spacing: 1px;">
+					Any type of assets
+				</button>
+				<button style="border: none; padding: 10px 20px; margin: 0 5px 0 0px;background-color: black;color: #e7e8d5;font-size: 1em;font-weight: 500;white-space: nowrap;letter-spacing: 1px;">
+					Fast payments
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Trends/ Table -->
+<div style="margin-top: 5em;padding-bottom: 70px;">
+
+	<!-- Title -->
+	<div style="font-family:'RocMedium', sans-serif;font-size:3em;font-weight: 300;line-height: 130%;margin: 0;width: auto;text-align: left;margin-bottom: 50px">
+		Market Trend
+	</div>
+
+	<!-- Table -->
+	<div style="padding-bottom: 30px;">
+	<table style="width: 100%;font-family: 'Sora', sans-serif;border: 2px solid;background-color: #ffffff;">
+  		<tr style="height: 80px;font-size: .8em;font-weight: bolder;">
+    		<th style="width: 25%;border-bottom: 2px solid black;">
+    			BLOCKCHAIN
+    		</th>
+    		<th style="width: 25%;border-bottom: 2px solid black;">
+    			LAST PRICE
+    		</th>
+    		<th style="width: 25%;border-bottom: 2px solid black;">
+    			LAST 7 DAYS
+    		</th>
+    		<th style="width: 25%;border-bottom: 2px solid black;">
+    			GRAPH
+    		</th>
+  		</tr>
+  		<tr>
+    		<td style="padding-left: 40px;">
+    			<div style="display: flex;width: 100px;">
+    				<div style="flex:1">
+    					<img style="width:50px;height:50px;padding-right: 20px;" src="\images\bitcoin.png">
+    				</div>
+    				<div style="display: flex;flex: 1;flex-direction: column;flex-wrap: wrap;">
+    					<div style="flex:1;font-size: 1.2em;font-weight: 700;"> 
+    						Bitcoin
+    					</div>
+    					<div style="flex:1;font-size: .9em;">
+    						BTC
+    					</div>
+    				</div>
+    			</div>
+    		</td>
+    		<td style="text-align: center;font-weight: 700;">
+    			$50,182.89
+    		</td>
+    		<td style="text-align:center;font-weight: 700;">
+    			<span style="border: 2px solid;padding: 5px 10px;background-color: #e2ffe3;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    				▴ 24,55%
+    			</span>
+    		</td>
+    		<td style="text-align: right;">
+    			<img style="padding: 20px 40px 20px 0;width: 150px;height: 60px" src="\images\path.png">
+    		</td>
+  		</tr>
+  		<tr >
+  			<td style="padding-left: 40px;">
+  				<div style="display: flex;width: 100px;">
+    				<div style="flex:1">
+    					<img style="width:50px;height:50px;padding-right: 20px;" src="\images\ethereum.png">
+    				</div>
+    				<div style="display: flex;flex: 1;flex-direction: column;flex-wrap: wrap;">
+    					<div style="flex:1;font-size: 1.2em;font-weight: 700;"> 
+    						Ethereum
+    					</div>
+    					<div style="flex:1;font-size: .9em;">
+    						ETH
+    					</div>
+    				</div>
+    			</div>
+  			</td>
+  			<td style="text-align: center;font-weight: 700;">
+  				$3,324.93
+  			</td>
+  			<td style="text-align:center;font-weight: 700;">
+    			<span style="border: 2px solid;padding: 5px 10px;background-color: #ffe1e2;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    				▾ 24,55%
+    			</span>
+    		</td>
+  			<td style="text-align: right;">
+  				<img style="padding: 10px 40px 10px 0;width: 150px;height: 60px" src="\images\path.png">
+  			</td>
+  		</tr>
+  		<tr >
+  			<td style="padding-left: 40px;">
+  				<div style="display: flex;width: 100px;">
+    				<div style="flex:1">
+    					<img style="width:50px;height:50px;padding-right: 20px;" src="\images\tether.png">
+    				</div>
+    				<div style="display: flex;flex: 1;flex-direction: column;flex-wrap: wrap;">
+    					<div style="flex:1;font-size: 1.2em;font-weight: 700;"> 
+    						Tether
+    					</div>
+    					<div style="flex:1;font-size: .9em;">
+    						USDT
+    					</div>
+    				</div>
+    			</div>
+  			</td>
+  			<td style="text-align: center;font-weight: 700;">
+  				$2.82
+  			</td>
+  			<td style="text-align:center;font-weight: 700;">
+    			<span style="border: 2px solid;padding: 5px 10px;background-color: #e2ffe3;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    				▴ 24,55%
+    			</span>
+    		</td>
+  			<td style="text-align: right;">
+  				<img style="padding: 10px 40px 10px 0;width: 150px;height: 60px" src="\images\path.png">
+  			</td>
+  		</tr>
+  		<tr >
+  			<td style="padding-left: 40px;">
+  				<div style="display: flex;width: 100px;">
+    				<div style="flex:1">
+    					<img style="width:50px;height:50px;padding-right: 20px;" src="\images\coin.png">
+    				</div>
+    				<div style="display: flex;flex: 1;flex-direction: column;flex-wrap: wrap;">
+    					<div style="flex:1;font-size: 1.2em;font-weight: 700;white-space: nowrap;"> 
+    						Binance Coin
+    					</div>
+    					<div style="flex:1;font-size: .9em;">
+    						BNB
+    					</div>
+    				</div>
+    			</div>
+  			</td>
+  			<td style="text-align: center;font-weight: 700;">
+  				$1,001.11
+  			</td>
+  			<td style="text-align:center;font-weight: 700;">
+    			<span style="border: 2px solid;padding: 5px 10px;background-color: #ffe1e2;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    				▾ 24,55%
+    			</span>
+    		</td>
+  			<td style="text-align: right;">
+  				<img style="padding: 10px 40px 10px 0;width: 150px;height: 60px" src="\images\path.png">
+  			</td>
+  		</tr>
+  		<tr >
+  			<td style="padding-left: 40px;">
+  				<div style="display: flex;width: 100px;">
+    				<div style="flex:1">
+    					<img style="width:50px;height:50px;padding-right: 20px;" src="\images\xrp.png">
+    				</div>
+    				<div style="display: flex;flex: 1;flex-direction: column;flex-wrap: wrap;">
+    					<div style="flex:1;font-size: 1.2em;font-weight: 700;"> 
+    						XRP
+    					</div>
+    					<div style="flex:1;font-size: .9em;">
+    						XRP
+    					</div>
+    				</div>
+    			</div>
+  			</td>
+  			<td style="text-align: center;font-weight: 700;">
+  				$484.07
+  			</td>
+  			<td style="text-align:center;font-weight: 700;">
+    			<span style="border: 2px solid;padding: 5px 10px;background-color: #e2ffe3;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    				▴ 24,55%
+    			</span>
+    		</td>
+  			<td style="text-align: right;">
+  				<img style="padding: 10px 40px 10px 0;width: 150px;height: 60px" src="\images\path.png">
+  			</td>
+  		</tr>
+  	</table>
+	</div>
+
+	<div style="width: 100%;font-family: 'Sora', sans-serif;">
+		<span style="border: 2px solid;width: 100%;padding: 1% 45.5%;font-weight: 700;background-color: #c6fb6e;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    		View Markets
+    	</span>
+    </div>
+ </div>
+
+
+
+<!-- Best Seller NFT Cards -->
+<div style="margin-top: 50px;">
+
+	<!-- Best Seller Title -->
+	<div style="display: flex;padding:15px;width: 100%;">
+		<div style="flex: 1;padding:15px 0;">
+			<span style="border: 2px solid;width: 100%;padding: 20px;font-weight: 700;font-size: 1.5em;background-color: white;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    			🡨
+    		</span>
+		</div>
+		<div style="display:flex;flex-direction: column;flex: 10;">	
+			<div style="flex: 1;font-family:'Sora', sans-serif;font-size:1em;font-weight: 700;line-height: 150%;margin: 0;text-align: center;">
+				MARKETPLACE
+			</div>
+			<div style="flex: 1;font-family:'RocMedium', sans-serif;font-size:3em;font-weight: 300;line-height: 130%;margin: 0;text-align: center;">
+				Best Seller NFTs
+			</div>
+		</div>
+		<div style="flex: 1;padding:15px 0;">
+			<span style="border: 2px solid;width: 100%;padding: 20px;font-weight: 700;font-size: 1.5em;background-color: white;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);"> 
+    			🡪
+    		</span>
+		</div>
+	</div>
+</div>
+
+
+	<!-- NFT Cards -->
+<div style="display: flex;padding-top: 5px;width: 100%;">
+		
+	<div style="flex: 1;height:750px; font-family: 'Sora', sans-serif;letter-spacing: 0px;padding-right: 30px;">
+		<!-- Top Half of Card -->
+		<div style="display: flex; flex-direction: column; border: 2px solid;position: absolute;height: 30em;width: 390px;margin-top: 2em;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;">
+			<div style="display: flex;border-bottom: 2px solid;width: 390px;height: 4em;">
+				<div style="flex: 5;text-align: left;font-size: 1.3em;font-weight: 700;padding-top: 18px;padding-left: 20px;background-color: #fcf7dd;">
+					NFT Killer- 2.0
+				</div>
+				<div style="flex: 1;border-left: 2px solid;text-align: center;padding: 18px 0;background-color: white;">
+					<img style="width: 30px;height: 30px;" src="\images\heart.png">
+				</div>
+			</div>
+			<div style="width: 390px;height: 26em;">
+				<img style="width: 100%;height: 100%;" src="\images\head2.png">
+			</div>
+		</div>
+
+		<!-- Bottom Half of Card -->
+	<div style="border: 2px solid;height: 4em;width: 390px;margin-top: 33em;display: flex;flex-direction: row;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:white;">
+			<div style="border-right: 2px solid;width: 50%;height: 4em;flex: 1;">
+				<p style="text-align: center;font-size: 1.3em;font-weight: 900;">
+					2.3 ETH
+				</p>
+			</div>
+			<div style="width: 50%;height: 4em;">
+				<p style="text-align: center;font-size: 1.3em;">
+					00:12:34
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div style="flex: 1;height:750px; font-family: 'Sora', sans-serif;letter-spacing: 0px;padding-right: 30px;">
+		<!-- Top Half of Card -->
+		<div style="display: flex; flex-direction: column; border: 2px solid;position: absolute;height: 30em;width: 390px;margin-top: 2em;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;">
+			<div style="display: flex;border-bottom: 2px solid;width: 390px;height: 4em;">
+				<div style="flex: 5;text-align: left;font-size: 1.3em;font-weight: 700;padding-top: 18px;padding-left: 20px;background-color: #dedcda;">
+					NFT Killer- 2.0
+				</div>
+				<div style="flex: 1;border-left: 2px solid;text-align: center;padding: 20px 0;background-color: white;">
+					<img style="width: 20px;height: 20px;" src="\images\heart1.png">
+				</div>
+			</div>
+			<div style="width: 390px;height: 26em;">
+				<img style="width: 100%;height: 100%;" src="\images\abstract2.png">
+			</div>
+		</div>
+
+		<!-- Bottom Half of Card -->
+		<div style="border: 2px solid;height: 4em;width: 390px;margin-top: 33em;display: flex;flex-direction: row;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:white;">
+			<div style="border-right: 2px solid;width: 50%;height: 4em;flex: 1;">
+				<p style="text-align: center;font-size: 1.3em;font-weight: 900;">
+					2.3 ETH
+				</p>
+			</div>
+			<div style="width: 50%;height: 4em;">
+				<p style="text-align: center;font-size: 1.3em;">
+					00:12:34
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div style="flex: 1;height:750px; font-family: 'Sora', sans-serif;letter-spacing: 0px;">
+		<!-- Top Half of Card -->
+		<div style="display: flex; flex-direction: column; border: 2px solid;position: absolute;height: 30em;width: 390px;margin-top: 2em;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;">
+			<div style="display: flex;border-bottom: 2px solid;width: 390px;height: 4em;">
+				<div style="flex: 5;text-align: left;font-size: 1.3em;font-weight: 700;padding-top: 18px;padding-left: 20px;background-color: #d6e2ea;">
+					NFT Killer- 2.0
+				</div>
+				<div style="flex: 1;border-left: 2px solid;text-align: center;padding: 20px 0;background-color: white;">
+					<img style="width: 20px;height: 20px;" src="\images\heart.png">
+				</div>
+			</div>
+			<div style="width: 390px;height: 26em;">
+				<img style="width: 100%;height: 100%;" src="\images\robo2.png">
+			</div>
+		</div>
+		
+
+		<!-- Bottom Half of Card -->
+		<div style="border: 2px solid;height: 4em;width: 390px;margin-top: 33em;display: flex;flex-direction: row;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:white;">
+			<div style="border-right: 2px solid;width: 50%;height: 4em;flex: 1;">
+				<p style="text-align: center;font-size: 1.3em;font-weight: 900;">
+					2.3 ETH
+				</p>
+			</div>
+			<div style="width: 50%;height: 4em;">
+				<p style="text-align: center;font-size: 1.3em;">
+					00:12:34
+				</p>
+			</div>
+		</div>
+	</div>	
+</div>
+	
+
+
+<!-- FAQ Title -->	
+<div style="display:flex;flex-direction: column;flex: 10;">	
+	<div style="flex: 1;font-family:'Sora', sans-serif;font-size:1em;font-weight: 700;line-height: 150%;margin: 0;text-align: center;">
+		ABOUT US
+	</div>
+	<div style="flex: 1;font-family:'RocMedium', sans-serif;font-size:3em;font-weight: 300;line-height: 130%;margin: 0;text-align: center;">
+		Frequently asked questions
+	</div>
+</div>
+
+<!-- Frequently Asked Questions -->
+
+<div style="display: flex;padding-top: 50px;padding-bottom: 50px;width: 100%;font-family:'RocMedium', sans-serif;font-size:1.5em;font-weight: 500;">
+
+	<div style="flex: 1;display: flex; flex-direction: column;">
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;padding: 10px 0;">
+			<div style="width: 95%;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="width: 100%;">
+					<div style="flex: 1; display: flex;border-left: 2px solid;border-right: 3px solid;border-top: 2px solid;width: 94%;background-color: #6febaf;padding: 10px 10px 10px 20px;">
+						<div style="flex: 11;padding-top: 12px;">
+							What Is NFSpace?
+						</div>
+						<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+							－
+						</div>
+					</div>
+				</div>
+				<div style="flex:1;border: 2px solid;border-right: 3px solid;width: 94%;background-color: white;padding: 20px 10px 20px 20px;font-family:'sora', sans-serif;font-size: .8em;font-weight: 500;">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumque nostrum veritatis iusto ullam, laboriosam facere numquam est fugiat tempora rem?
+				</div>
+			</div>
+		</div>
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div style="flex: 1;display: flex; flex-direction: column;">
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+		<div style="display:flex;flex-direction: column;padding: 10px 0;">
+			<div style="width: 95%;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="width: 100%;">
+					<div style="flex: 1; display: flex;border-left: 2px solid;border-right: 3px solid;border-top: 2px solid;width: 94%;background-color: #6febaf;padding: 10px 10px 10px 20px;">
+						<div style="flex: 11;padding-top: 12px;">
+							What Is NFSpace?
+						</div>
+						<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+							－
+						</div>
+					</div>
+				</div>
+				<div style="flex:1;border: 2px solid;border-right: 3px solid;width: 94%;background-color: white;padding: 20px 10px 20px 20px;font-family:'sora', sans-serif;font-size: .8em;font-weight: 500;">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumque nostrum veritatis iusto ullam, laboriosam facere numquam est fugiat tempora rem?
+				</div>
+			</div>
+		</div>
+		<div style="padding: 10px 0;">
+			<div style="flex: 1; display: flex;border: 2px solid;width: 90%;background-color: white;padding: 10px 10px 10px 20px;box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);-moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);">
+				<div style="flex: 11;padding-top: 12px;">
+					What Is NFSpace?
+				</div>
+				<div style="flex: 1;font-weight: 500;font-size: 1.5em;">
+					＋
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<!-- footer -->
+<div style="display: flex;padding: 100px 0 75px 0;">
+
+	<!-- title & Socials -->
+	<div style="flex: 1;flex-direction: column;">
+		<div style="flex: 1;height:40px;align-items: center;display: flex;align-items: center;font-family:'Roc', sans-serif;font-size:1.5em;font-weight: 900;">
+			Space.
+		</div>
+		<div style="height:40px;flex:1;font-family: 'Sora', sans-serif;letter-spacing: 1px;display: flex;align-items: left;">
+			<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding: 20px 20px 0 0px;" href="">
+				<img style="width:20px;height:20px;" src="\images\twitter.png">
+			</a>
+			<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding-right: 20px;padding-top: 20px;" href="">
+				<img style="width:20px;height:20px;" src="\images\bitcoin.png">
+			</a>
+			<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600;padding-right: 20px;padding-top: 20px;" href="">
+				<img style="width:20px;height:20px;" src="\images\Discord.png">
+			</a>
+			<a style="text-decoration: none;color:black;font-size: .9em;font-weight: 600; padding-top: 20px;" href="">
+				<img style="width:20px;height:20px;" src="\images\github.png">
+			</a>
+		</div>
+		<div style="flex: 1;font-family:'sora', sans-serif;font-size: .8em;font-weight: 700;padding-top: 110px;">
+			All rights reserved @<strong>2023 Space.</Strong>
+		</div>
+	</div>
+
+	<!-- Resources -->
+	<div style="flex: 1;height:40px;font-family: 'Sora', sans-serif;font-size: 1em;font-weight: 700;letter-spacing: 2px;align-items: center;">
+		
+		<table style="width: 100%;text-align: left;line-height: 200%;">
+			<th style="font-family: 'RocMedium', sans-serif;font-size: 1.2em;font-weight: 700;padding-bottom: 15px;">
+				Marketplace
+			</th>
+			<th style="font-family: 'RocMedium', sans-serif;font-size: 1..2em;font-weight: 700;padding-bottom: 15px;">
+				Company
+			</th>
+			<th style="font-family: 'RocMedium', sans-serif;font-size: 1.2em;font-weight: 700;padding-bottom: 15px;">
+				Services
+			</th>
+			<tr>
+				<td>
+					About us
+				</td>
+				<td>
+					Wallet
+				</td>
+				<td>
+					Contact us
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Our team
+				</td>
+				<td>
+					Create page
+				</td>
+				<td>
+					Shop page
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Team details
+				</td>
+				<td>
+					Login page
+				</td>
+				<td>
+					Shop details
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Error 404
+				</td>
+				<td>
+					Registration
+				</td>
+				<td>
+					Collectors
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Cart Page
+				</td>
+				<td>
+					Checkout
+				</td>
+			</tr>
+		</table>
+
+	</div>
+</div>
+
+
+</div>
+</body>
+
+<footer>
+
+</footer>
+</html>
+
