@@ -1,0 +1,998 @@
+
+ @font-face {
+     font-family: Roc;
+     src: url(fonts/Roc-Grotesk/rocgroteskwide-black.otf) format("truetype");
+
+}
+
+@font-face {
+    font-family: RocMedium;
+    src: url(fonts/Roc-Grotesk/rocgrotesk-medium.otf) format("truetype");
+
+}
+
+ @font-face {
+    font-family: RocRegular;
+    src: url(fonts/Roc-Grotesk/rocgroteskcomp-regular.otf) format("truetype");
+
+}
+
+
+body {
+    background:#e7e8d5;
+    width: 80%;
+    margin:0 auto;
+    padding:20px;
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+
+
+/* navigation */ 
+
+.navcontainer {
+    display: flex;
+    padding: 15px 0 75px 0;
+    font-family: 'Sora', sans-serif;
+}
+
+.title {
+    height:40px;
+    display: flex;
+    align-items: center;
+    font-family:'Roc', sans-serif;
+    font-size:1.5em;
+    font-weight: 900;
+}
+
+.middle-nav {
+    height:40px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    flex:1;
+
+}
+
+
+.home, .market, .blog {
+    padding-right: 30px;
+}
+
+.home {
+    padding-left: 50px;
+}
+
+.right-nav {
+    height:40px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+img.moon {
+    width: 20px;
+    height: 20px;
+    padding:0 30px;
+}
+
+.navbutton, .connect, .EN {
+    border: 2px solid;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+}
+
+.navbutton-one {
+    margin-left: 10px;
+    padding: 10px 18px;
+}
+
+
+.connect {
+    font-size: 1em;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    background-color: #c6fb6e;
+}
+
+.EN {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+
+
+
+/* about */ 
+
+
+.headcontainer {
+    display: flex;
+}
+
+
+.about {
+    height:600px; 
+    flex: 2;
+}
+
+.about-title {
+    font-family:'RocMedium', sans-serif;
+    font-size:4em;
+    font-weight: 300;
+    line-height: 100%;
+    margin: 0;
+    padding-top: 65px;
+
+}
+
+
+.about-descr {
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+    padding-top:20px;
+    padding-bottom: 50px;
+}
+
+
+.aboutbutton-one, .aboutbutton-two {
+    border: 2px solid;
+    padding: 18px 28px;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.aboutbutton-one {
+    margin: 0 10px 0 0px;
+    background-color: #c6fb6e;
+}
+
+.aboutbutton-two {
+    background-color: white;
+    text-decoration: none;
+    color:black;
+   
+}
+
+
+/* NFT Card */
+
+.nftcardcontainer {
+    height:600px; 
+    flex: 1;
+    text-align: center;
+    padding-left:10%;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 0px;
+}
+
+
+.nftcard-top {
+    display: flex; 
+    flex-direction: column; 
+    border: 2px solid;
+    position: absolute;
+    height: 26em;
+    width: 19em;
+    margin-left: 8em;
+    margin-top: 2em;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;
+}
+
+
+.nftkiller {
+    border-bottom: 2px solid;
+    width: 14.6em;
+    height: 4em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+    flex: 1;
+    padding: 20px 0;
+}
+
+.nftkiller-spacing {
+    padding: 14px 77px;
+}
+
+.cardimage {
+    border-bottom: 2px solid;
+    height: 18em;
+    width: 19em;
+}
+
+.cardimagesize {
+    width: 100%;
+    height: 100%;
+}
+
+.nftcardinfo {
+    width: 19em;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.ETH {
+    border-right: 2px solid;
+    width: 9.5em;
+    height: 4em;
+    flex: 1;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.cardtime {
+    width: 9.5em;
+    flex: 1;
+    height: 4em;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 20px 0;
+}
+
+
+
+/* Bottom Half NFT Card */
+
+
+.nftcardbottom {
+    border: 2px solid;
+    position: absolute;
+    height: 1.5em;
+    width: 19em;
+    margin-left: 8em;
+    margin-top: 29em;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    background:#e7e8d5;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 20px 0 20px 0;
+}
+
+.BidNowPadding {
+    padding: 20px 0;
+}
+
+.circleimage {
+    height: 35em;width: 35em;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 2px solid black; 
+    display: inline-block;
+    background-image: linear-gradient(145deg, #6febaf 45.45%, #000000 45.45%, #000000 50%, #6febaf 50%, #6febaf 95.45%, #000000 95.45%, #000000 100%);
+    background-size: 38.36px 26.86px;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+}
+
+
+
+/* Number of Collections/ Art */
+
+
+.ArtContainer {
+    margin-top: 150px;
+    padding: 5em 0;
+    display: flex;
+}
+
+
+.ArtSection {
+    height:300px;
+    width: 416px;
+}
+
+.ArtPadding {
+    padding: 50px;
+
+}
+
+.ArtContent {
+    font-family: 'Sora', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ArtNumber {
+    font-size:5em;
+    line-height: 100%;
+}
+
+.ArtTitle {
+    font-size: 1.3em;
+    line-height: 150%;
+}
+
+
+
+/* Points */
+
+.PointsContainer {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    background-color: white;
+}
+
+.PointsContent {
+    flex: 1;
+    height: 300px;
+}
+
+.PointsBorder {
+    border-right: 2 px solid;
+}
+
+.PointsPadding {
+    padding: 50px;
+}
+
+.PointsImage {
+    width:60px;
+    height:60px;
+    padding-bottom: 2em;
+}
+
+.PointsTitle {
+    font-family: 'RocMedium', sans-serif;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 700;
+    ine-height: 100%;margin: 0;
+}
+
+.Points {
+    font-family: 'Sora', sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+    padding-top:10px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 20em;
+}
+
+
+/* discover */
+
+
+.DiscoverContainer {
+    margin-top: 5em;
+    display: flex;
+}
+
+.GalleryContainer {
+    height:390px;
+    flex: 1;
+    border: 2px solid;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    display: flex;
+}
+
+.GalleryImgFlex {
+    flex:1;
+}
+
+.GalleryImgBorder {
+    border-right: 2px solid;
+}
+
+.GalleryImg {
+    width: 100%;
+    Height: 100%;
+}
+
+
+
+
+.GalleryAboutContainer {
+    padding-left: 0px;
+    height:400px;
+    flex: 1;
+}
+
+.GalleryAboutPadding {
+    padding: 0 80px;
+}
+
+.GalleryAboutTitle {
+    margin-top: 0;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    width: 30em;
+}
+
+.GalleryAboutHeading {
+    font-family:'RocMedium', sans-serif;
+    font-size:3em;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    width: 10em;
+}
+
+.GalleryAboutDescription {
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+    padding-top:10px;
+    padding-bottom: 20px;
+    width: 30em;
+}
+
+.GalleryAboutButtonContainer {
+font-family: 'Sora', sans-serif;
+width: 30em;
+}
+
+.GalleryAboutButton {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px 0 0px;
+    background-color: black;
+    color: #e7e8d5;
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.GAB1 {
+    margin: 0 5px 5px 0px;
+}
+
+
+
+/* Table&Trends */
+
+.TrendsTableContainer {
+    margin-top: 5em;
+    padding-bottom: 70px;
+}
+
+.TableTitle {
+    font-family:'RocMedium', sans-serif;
+    font-size:3em;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    width: auto;
+    text-align: left;
+    margin-bottom: 50px
+}
+
+
+.TableContainer {
+    padding-bottom: 30px;
+}
+
+.TableStyle {
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    border: 2px solid;
+    background-color: #ffffff;
+}
+
+.TableRows {
+    height: 80px;
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+.TableHeader {
+    width: 25%;
+    border-bottom: 2px solid black;
+}
+
+.TableRow1 {
+    padding-left: 40px;
+}
+
+.TableRow1Content {
+    display: flex;
+    width: 100px;
+}
+
+.TableRow1Flex {
+    flex: 1;
+}
+
+.TableRow1Img {
+    width:50px;
+    height:50px;
+    padding-right: 20px;
+}
+
+.TableRow1Text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.TableRow1Coin {
+    flex:1;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.TableRow1Abr {
+    flex:1;
+    font-size: .9em;
+}
+
+.TableRow2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.TableRow4 {
+    text-align: right;
+}
+.TableRow3 {
+    text-align:center;
+    font-weight: 700;
+}
+
+.TableRow3Text {
+    border: 2px solid;
+    padding: 5px 10px;
+    background-color: #e2ffe3;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+}
+
+.TableRow4Img {
+    padding: 20px 40px 20px 0;
+    width: 150px;
+    height: 60px;
+}
+
+.ViewMarketContainer {
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+}
+
+.ViewMarket {
+    border: 2px solid;
+    width: 100%;
+    padding: 1% 45.5%;
+    font-weight: 700;
+    background-color: #c6fb6e;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+
+}
+
+
+
+
+
+
+/* Nft Title */
+
+.NFTTitleMargin {
+    margin-top: 50px;
+}
+
+.NFTTitleContainer {
+    display: flex;
+    padding:15px;
+    width: 100%;
+}
+
+.TitleButtonStyle {
+    flex: 1;
+    padding:15px 0;
+}
+
+.TitleButton {
+    border: 2px solid;
+    width: 100%;
+    padding: 20px 30px 20px 15px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 2em;
+    background-color: white;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+}
+
+.NFTTitleText {
+    display:flex;
+    flex-direction: column;
+    flex: 10;
+}
+
+.MarketPlace {
+    flex: 1;font-family:'Sora', sans-serif;
+    font-size:1em;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+    text-align: center;
+}
+
+.BestSeller {
+    flex: 1;
+    font-family:'RocMedium', sans-serif;
+    font-size:3em;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* NFTCardsSections */
+
+
+.CardSectionContainer {
+    display: flex;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.CardStyling {
+    flex: 1;
+    height:750px; 
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 0px;
+}
+
+.CardPadding {
+    padding-right: 30px;
+}
+
+
+
+
+/* NftCardsSection Top Half */
+
+.TopHalfofCard {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    position: absolute;
+    height: 30em;
+    width: 390px;
+    margin-top: 2em;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    background:#e7e8d5;
+}
+
+.CardIconTitle {
+    display: flex;
+    border-bottom: 2px solid;
+    width: 390px;
+    height: 4em;
+}
+
+.CardTitle {
+    flex: 5;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+.Card1Color {
+    background-color: #fcf7dd;
+}
+
+.Card2Color {
+    background-color: #dedcda;
+
+}
+
+.Card3Color {
+    background-color: #d6e2ea;
+}
+
+.CardIcon {
+    flex: 1;
+    border-left: 2px solid;
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+
+.CardIconSize {
+    width: 20px;
+    height: 20px;
+}
+
+.CardImg {
+    width: 390px;
+    height: 26em;
+}
+
+.CardImgSize {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NftCardsSection Bottom Half */
+
+.BottomHalfofCard {
+    border: 2px solid;
+    height: 4em;
+    width: 390px;
+    margin-top: 33em;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    background:white;
+}
+
+.ETHContainer {
+    border-right: 2px solid;
+    width: 50%;
+    height: 4em;
+    flex: 1;
+}
+
+.ETHText {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.TimeContainer {
+    width: 50%;
+    height: 4em;
+}
+
+.TimeText {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+
+/* FAQ Title&Questions */
+
+.FAQTitleContainer {
+    display:flex;
+    flex-direction: column;
+    flex: 10;
+}
+
+.AboutUs {
+    flex: 1;
+    font-family:'Sora', sans-serif;
+    font-size:1em;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+    text-align: center;
+}
+
+.FAQTitle {
+    flex: 1;
+    font-family:'RocMedium', sans-serif;
+    font-size:3em;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 0;
+    text-align: center;
+}
+
+.FAQContainer {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    font-family:'RocMedium', sans-serif;
+    font-size:1.5em;
+    font-weight: 500;
+}
+
+
+.FAQColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQBox {
+    padding: 10px 0;
+}
+
+.FAQExpanded {
+    display:flex;
+    flex-direction: column;
+}
+
+.FAQContent {
+    flex: 1;
+    display: flex;
+    border: 2px solid;
+    width: 90%;
+    background-color: white;
+    padding: 10px 10px 10px 20px;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+}
+
+.FAQExpandedContainer {
+    width: 95%;
+    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+
+}
+
+.FAQExpandedWidth {
+    width: 100%;
+}
+
+.FAQExpandedContent {
+flex: 1;
+display: flex;
+border-left: 2px solid;
+border-right: 3px solid;
+border-top: 2px solid;
+width: 94%;
+background-color: #6febaf;
+padding: 10px 10px 10px 20px;
+}
+
+.Question {
+    flex: 11;
+    padding-top: 12px;
+}
+
+.ExpandButton {
+    flex: 1;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.Answer {
+    flex:1;
+    border: 2px solid;
+    border-right: 3px solid;
+    width: 94%;
+    background-color: white;
+    padding: 20px 10px 20px 20px;
+    font-family:'sora', sans-serif;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+
+
+/* Footer */
+
+
+.FooterContainer {
+    Display: flex;
+    Padding: 100px 0 75px 0;
+}
+
+.Footer {
+flex: 1;
+flex-direction: column;
+}
+
+.FooterTitle {
+    flex: 1;
+    height:40px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    font-family:'Roc', sans-serif;
+    font-size:1.5em;
+    font-weight: 900;
+}
+
+.SocialsContainer {
+    height:40px;
+    flex:1;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: left;
+}
+
+.SocialsLink {
+    text-decoration: none;
+    color:black;
+    font-size: .9em;
+    font-weight: 600;
+    padding: 20px 20px 0 0px;
+}
+.SocialsIcon {
+    width:20px;
+    height:20px;
+}
+
+.FooterRights {
+    flex: 1;
+    font-family:'sora', sans-serif;
+    font-size: .8em;
+    font-weight: 700;
+    padding-top: 110px;
+}
+
+
+/* Resources */
+
+.ResourceContainer {
+    flex: 1;
+    height:40px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+.ResourceTable {
+    width: 100%;
+    text-align: left;
+    line-height: 200%;
+}
+
+.ResourceHeader {
+    font-family: 'RocMedium', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
