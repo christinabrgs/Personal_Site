@@ -20,7 +20,7 @@
 
 body {
     background:#e7e8d5;
-    width: 80%;
+    width: 65%;
     margin:0 auto;
     padding:20px;
 
@@ -106,7 +106,7 @@ img.moon {
 }
 
 .EN {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
     background-color: white;
@@ -125,12 +125,12 @@ img.moon {
 
 .about {
     height:600px; 
-    flex: 2;
+    flex: 1.5;
 }
 
 .about-title {
     font-family:'RocMedium', sans-serif;
-    font-size:4em;
+    font-size:5em;
     font-weight: 300;
     line-height: 100%;
     margin: 0;
