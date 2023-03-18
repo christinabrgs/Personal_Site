@@ -23,8 +23,27 @@ body {
     width: 100%;
     margin:0 auto;
     padding:0px;
-
+    scrollbar-width: thin;
+  scrollbar-color: grey black;
 }
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #111111;
+    border-radius: 20px;
+    border: 3px solid #007dd1;
+  }
+
+
+
 
 a {
     text-decoration: none;
@@ -33,17 +52,20 @@ a {
     font-weight: 600;
 }
 
+a:hover {
+    color: rgb(255, 253, 117);
+}
 
 
 /* navigation */ 
 
 .navcontainer {
     display: flex;
-    padding: 15px 0 30px 0;
+    padding: 50px 0 0px 0;
     font-family: 'Sora', sans-serif;
     width: 65%;
     color: white;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .navcontainer a {
@@ -74,13 +96,17 @@ a {
     padding-right: 30px;
 }
 
+.home:hover, .market:hover, .blog:hover {
+    color: rgb(255, 253, 117);
+}
+
 .home {
-    padding-left: 50px;
+    padding-left: 70px;
 }
 
 .right-nav {
     height:40px;
-    margin-top: 10px;
+    margin-top: 50px;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
@@ -88,16 +114,17 @@ a {
 
 
 .navbutton, .connect, .EN {
-    border: 2px solid;
-    padding: 10px 10px;
-    box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
-    -webkit-box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
-    -moz-box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
+    border: 0px solid;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 0px -1px #007dd1;
+    -webkit-box-shadow: 5px 5px 0px -1px #007dd1;
+    -moz-box-shadow: 5px 5px 0px -1px #007dd1;
 }
 
 .navbutton-two {
+    position: relative;
     margin-left: 10px;
-    padding: 5px 0px;
+    padding: 5px 0px 0px 500px;
     border-radius: 0%;
 }
 
@@ -111,7 +138,7 @@ a {
 }
 
 .EN {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
     letter-spacing: 1px;
     background-color: white;
@@ -123,11 +150,20 @@ a {
     color: black;
 }
 
+.navbutton-two a:hover {
+    color: #007dd1;
+}
+
+.navbutton-two i:hover {
+    color: #007dd1;
+}
+
 
 
 /* about */ 
 
 .head-background {
+    margin-top: 30px;
     width: 100%;
     height: 800px; 
     background: url(images/Icon-Parallax.gif);
@@ -153,7 +189,7 @@ a {
     font-weight: 300;
     line-height: 100%;
     margin: 0;
-    padding-top: 65px;
+    padding-top: 100px;
     color: white;
 
 }
@@ -162,7 +198,7 @@ a {
 .about-descr {
     font-family: 'Sora', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
     line-height: 150%;
     margin: 0;
@@ -186,7 +222,7 @@ a {
 
 .aboutbutton-one {
     margin: 0 10px 0 0px;
-    background-color: #c6fb6e;
+    background-color: #6ec3fb;
 }
 
 .aboutbutton-two {
@@ -196,6 +232,9 @@ a {
    
 }
 
+.aboutbutton-two a:hover {
+    color: #007dd1;
+}
 
 /* NFT Card */
 
@@ -203,7 +242,7 @@ a {
     height:400px; 
     flex: 1;
     text-align: center;
-    padding-left:10%;
+    padding-left:3%;
     font-family: 'Sora', sans-serif;
     letter-spacing: 0px;
 }
@@ -226,7 +265,7 @@ a {
 
 
 .cardimage {
-    border-bottom: 2px solid;
+    border-bottom: 0px solid;
     height: 32em;
     width: 32em;
     border-radius: 100%;
