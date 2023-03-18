@@ -19,10 +19,10 @@
 
 
 body {
-    background:#e7e8d5;
-    width: 65%;
+    background: #111111;
+    width: 100%;
     margin:0 auto;
-    padding:20px;
+    padding:0px;
 
 }
 
@@ -39,9 +39,17 @@ a {
 
 .navcontainer {
     display: flex;
-    padding: 15px 0 75px 0;
+    padding: 15px 0 30px 0;
     font-family: 'Sora', sans-serif;
+    width: 65%;
+    color: white;
+    margin: 0 auto;
 }
+
+.navcontainer a {
+    color: white;
+}
+
 
 .title {
     height:40px;
@@ -72,28 +80,25 @@ a {
 
 .right-nav {
     height:40px;
+    margin-top: 10px;
     letter-spacing: 2px;
     display: flex;
     align-items: center;
 }
 
-img.moon {
-    width: 20px;
-    height: 20px;
-    padding:0 30px;
-}
 
 .navbutton, .connect, .EN {
     border: 2px solid;
     padding: 10px 10px;
-    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
+    -webkit-box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
+    -moz-box-shadow: 5px 5px 0px -1px rgb(113, 80, 235);
 }
 
-.navbutton-one {
+.navbutton-two {
     margin-left: 10px;
-    padding: 10px 18px;
+    padding: 5px 0px;
+    border-radius: 0%;
 }
 
 
@@ -110,16 +115,30 @@ img.moon {
     font-weight: 700;
     letter-spacing: 1px;
     background-color: white;
+    color: black;
+    border-radius: 100%;
 }
 
+.right-nav i {
+    color: black;
+}
 
 
 
 /* about */ 
 
+.head-background {
+    width: 100%;
+    height: 800px; 
+    background: url(images/Icon-Parallax.gif);
+    background-repeat: repeat;
+}
 
 .headcontainer {
     display: flex;
+    width: 65%;
+    margin: 0 auto;
+   
 }
 
 
@@ -135,6 +154,7 @@ img.moon {
     line-height: 100%;
     margin: 0;
     padding-top: 65px;
+    color: white;
 
 }
 
@@ -148,6 +168,7 @@ img.moon {
     margin: 0;
     padding-top:20px;
     padding-bottom: 50px;
+    color: white;
 }
 
 
@@ -179,7 +200,7 @@ img.moon {
 /* NFT Card */
 
 .nftcardcontainer {
-    height:600px; 
+    height:400px; 
     flex: 1;
     text-align: center;
     padding-left:10%;
@@ -191,111 +212,45 @@ img.moon {
 .nftcard-top {
     display: flex; 
     flex-direction: column; 
-    border: 2px solid;
+    border: 0px solid #007dd1;
     position: absolute;
-    height: 26em;
-    width: 19em;
-    margin-left: 8em;
+    border-radius: 100%;
+    height: 32em;
+    width: 32em;
+    margin-left: 2em;
     margin-top: 2em;
-    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);background:#e7e8d5;
+    box-shadow: 5px 5px 0px -1px #007dd1;
+    -webkit-box-shadow: 8px 8px 0px -1px #007dd1;
+    -moz-box-shadow: 8px 8px 0px -1px #007dd1;background:#e7e8d5;
 }
 
-
-.nftkiller {
-    border-bottom: 2px solid;
-    width: 14.6em;
-    height: 4em;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 700;
-    flex: 1;
-    padding: 20px 0;
-}
-
-.nftkiller-spacing {
-    padding: 14px 77px;
-}
 
 .cardimage {
     border-bottom: 2px solid;
-    height: 18em;
-    width: 19em;
+    height: 32em;
+    width: 32em;
+    border-radius: 100%;
 }
 
 .cardimagesize {
     width: 100%;
     height: 100%;
-}
-
-.nftcardinfo {
-    width: 19em;
-    height: 4em;
-    display: flex;
-    flex-direction: row;
-    
+    border-radius: 100%;
 }
 
 
-.ETH {
-    border-right: 2px solid;
-    width: 9.5em;
-    height: 4em;
-    flex: 1;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 900;
-    padding: 20px 0;
-}
-
-.cardtime {
-    width: 9.5em;
-    flex: 1;
-    height: 4em;
-    text-align: center;
-    font-size: 1.3em;
-    padding: 20px 0;
-}
-
-
-
-/* Bottom Half NFT Card */
-
-
-.nftcardbottom {
-    border: 2px solid;
-    position: absolute;
-    height: 1.5em;
-    width: 19em;
-    margin-left: 8em;
-    margin-top: 29em;
-    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    background:#e7e8d5;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 900;
-    padding: 20px 0 20px 0;
-}
-
-.BidNowPadding {
-    padding: 20px 0;
-}
-
-.circleimage {
+/* .circleimage {
     height: 35em;width: 35em;
     background-color: #bbb;
     border-radius: 50%;
     border: 2px solid black; 
     display: inline-block;
-    background-image: linear-gradient(145deg, #6febaf 45.45%, #000000 45.45%, #000000 50%, #6febaf 50%, #6febaf 95.45%, #000000 95.45%, #000000 100%);
+    background-image: linear-gradient(145deg, #007dd1 45.45%, #111111 45.45%, #111111 50%, #007dd1 50%, #007dd1 95.45%, #111111 95.45%, #111111 100%);
     background-size: 38.36px 26.86px;
-    box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
-}
+    box-shadow: 5px 5px 0px -1px rgb(255, 255, 255);
+    -webkit-box-shadow: 5px 5px 0px -1px rgb(255, 255, 255);
+    -moz-box-shadow: 5px 5px 0px -1px rgb(255, 255, 255);
+} */
 
 
 
@@ -923,12 +878,15 @@ padding: 10px 10px 10px 20px;
 
 .FooterContainer {
     Display: flex;
-    Padding: 100px 0 75px 0;
+    Padding: 50px 0 75px 0;
+    width: 65%;
+    margin: 0 auto;
 }
 
 .Footer {
 flex: 1;
 flex-direction: column;
+color: white;
 }
 
 .FooterTitle {
@@ -953,14 +911,16 @@ flex-direction: column;
 
 .SocialsLink {
     text-decoration: none;
-    color:black;
+    color:white;
     font-size: .9em;
     font-weight: 600;
     padding: 20px 20px 0 0px;
+    color: white;
 }
 .SocialsIcon {
     width:20px;
     height:20px;
+    color: white;
 }
 
 .FooterRights {
@@ -969,6 +929,7 @@ flex-direction: column;
     font-size: .8em;
     font-weight: 700;
     padding-top: 110px;
+    color: white;
 }
 
 
@@ -988,6 +949,7 @@ flex-direction: column;
     width: 100%;
     text-align: left;
     line-height: 200%;
+    color: white;
 }
 
 .ResourceHeader {
