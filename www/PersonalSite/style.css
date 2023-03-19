@@ -240,6 +240,14 @@ a:hover {
     color: #007dd1;
 }
 
+.allrights {
+    color: white;
+    padding-top: 100px;
+    font-size: .9em;
+    display: none;
+}
+
+
 /* NFT Card */
 
 .nftcardcontainer {
@@ -1269,6 +1277,10 @@ color: white;
 
     .nftcard-top {
         position: relative;
+    }
+
+    .allrights {
+        display: block;
     }
 
     .Footer {
