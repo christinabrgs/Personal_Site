@@ -23,10 +23,12 @@
 
 	<!-- title -->
 	<div class="title">
-		<a class="" href="index.html">
+		<a class="brand" href="index.html">
 		C.T.B
 		</a>
+		<button class="navMenu"><i class="fa-solid fa-bars"></i></button>
 	</div>
+	
 
 	<!-- middle navigation -->
 	<div class="middle-nav">
@@ -52,12 +54,21 @@
 		<a class="SocialsLink" target="_blank" href="https://github.com/christinabrgs/">
 			<i class="fa-brands fa-github"></i>
 		</a>
-
 	</div>
 
-	<!-- right navigation -->
-	<div class="right-nav">
-
+	
+	<div class="dropdown" id="dropMenu">
+		<nav>
+			<a class="home" href="index.html">
+				Home
+			</a>
+			<a class="market" href="work/index.html">
+				Projects
+			</a>
+			<a class="blog" href="contact/index.html">
+				Contact
+			</a>
+		</nav>
 	</div>
 </div>
 
@@ -72,11 +83,8 @@
 		<div class="about-title">
 			Christina Burgos
 		</div>
-		<div class ="about-descr">
-			As a dedicated software engineer, I am passionate about utilizing technology to improve the lives of others. I am committed to leveraging my experience in both IT and UX to excel in this role.
-		</div>
-		<div class ="about-descr" id="descriptwo">
-			Software Developer
+		<div class ="about-descr" id="descrip">
+			As a dedicated software developer, I am passionate about utilizing technology to improve the lives of others. I am committed to leveraging my experience in both IT and UX to excel in this role.
 		</div>
 		<span class="aboutbutton-one">
 			<a href="work/index.html">
@@ -88,15 +96,39 @@
 				Get in Touch
 			</a>
 		</span>
+
+		<button class="button-one">
+			<a href="work/index.html">
+				Projects
+			</a>
+		</button>
+		<button class="button-two">
+			<a href="contact/index.html">
+				Get in Touch
+			</a>
+		</button>
+	
 	</div>
 
 	<!-- NFT Card -->
 	<div class="nftcardcontainer">
+
+		<div class="about-title">
+			Christina Burgos
+		</div>
+		<div class ="about-descr" id="descriptwo">
+			Innovative developer showcasing forward-thinking websites.
+		</div>
+		<div class ="about-descr" id="descripthree">
+			Software Developr
+		</div>
+
 		<div class="navbutton-two">
 			<a class="EN" target="_blank" href="https://github.com/christinabrgs/">
 				<i class="fa-brands fa-github"></i>
 			</a>
 		</div>
+
 		<!-- Top Half of Card -->
 		<div class="nftcard-top">
 			<div id="overlay">
@@ -143,15 +175,11 @@
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
 </div>
+
+
+
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
 

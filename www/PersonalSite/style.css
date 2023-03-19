@@ -1003,8 +1003,172 @@ color: white;
     padding-bottom: 15px;
 }
 
+
+/* Edits for Responsivness  */
+
 #descriptwo {
     display: none;
+}
+
+.button-one, .button-two {
+    display:none;
+}
+
+
+.nftcardcontainer .about-title, .nftcardcontainer #descriptwo {
+    display: none;
+}
+
+#descripthree {
+    display: none;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+.title button {
+    background: transparent;
+    border-style: none;
+}
+
+.dropdown .home, .dropdown .market, .dropdown .blog {
+    display: none;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 528px) {
+
+    .navcontainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navcontainer .dropdown {
+        flex: 1;
+        background: #007dd1;
+        display: none;
+    }
+    
+    .dropdown .home, .dropdown .market, .dropdown .blog {
+        display: block;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .title {
+        flex: 1;
+        width: 100%;
+        background-color: white;
+    }
+
+    .title .brand {
+        display: none;
+    }
+
+    .title .fa-solid.fa-bars {
+        display: block;
+        font-size: 1.4em;
+        color: #111111;
+        padding: 10px;
+    }
+
+    .middle-nav {
+        display: none;
+    }
+
+    .navcontainer .middle-nav .SocialsLink {
+        display: none;
+    }
+
+    .about .aboutbutton-one, .about .aboutbutton-two {
+        display: none;
+    }
+
+    .about .button-one, .button-two {
+        display:unset;
+        border: 2px solid;
+        padding: 18px 28px;
+        width: 100%;
+        box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+        -webkit-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+        -moz-box-shadow: 5px 5px 0px -1px rgba(0,0,0,1);
+        font-family: 'Sora', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .button-one {
+        margin: 0 10px 0 0px;
+        background-color: #6ec3fb;
+    }
+    
+    .button-two {
+        background-color: white;
+        text-decoration: none;
+        color:black;
+       
+    }
+}
+
+
+
+@media (max-width: 524px) {
+
+.nftcardcontainer .nftcard-top {
+    width: 100%;
+    height: 100%;
+}
+
+.nftcardcontainer .nftcard-top .cardimage {
+    width: 100%;
+    height: 100%;
+}
+
+.nftcardcontainer #descripthree {
+    display: block;
+    font-size: 1.1em;
+}
+
+.headcontainer .nftcardcontainer .about-title {
+    font-size: 2.5em;
+
+}
+
+.headcontainer .nftcardcontainer #descriptwo {
+    display: none;
+}
+
+
+
+}
+
+@media (max-width: 560px) {
+
+
+    .nftcardcontainer .navbutton-two {
+        display: none;
+    }
+
+    .nftcardcontainer .nftcard-top {
+        margin: 0;
+    }
+
+    .about .aboutbutton-two {
+        width: 40%;
+
+    }
+
+    .about .aboutbutton-one {
+        width: 20%;
+    }
+
 }
 
 
@@ -1012,18 +1176,48 @@ color: white;
 
 @media (max-width: 800px) {
 
+.nftcardcontainer .about-title {
+    display: block;
+    font-size: 3em;
+    padding-top: 30px;
+}
+
+.nftcardcontainer #descriptwo {
+    display: block;
+    font-size: 1.3em;
+}
+
+.about {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aboutbutton-one, .aboutbutton-two {
+    width: 30%;
+    display: inline-block;
+}
+
 .nftcard-top {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 0 20px;
 }
 
 .cardimage {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
+}
+
+#descrip {
+    display: none;
+}
+
+.about .about-title {
+    display: none;
 }
 
 #descriptwo {
-    display: none;
+    display: block;
 }
 
 #resume {
@@ -1062,27 +1256,27 @@ color: white;
     .headcontainer {
         flex-direction: column-reverse;
 
-}
-.nftcardcontainer {
-    flex: 1;
-    padding: 0 ;
-}
+    }
+    .nftcardcontainer {
+        flex: 1;
+        padding: 0 ;
+    }
 
-.about {
-    flex: 1;
-    margin-bottom: 80px;
-}
+    .about {
+        flex: 1;
+        margin-bottom: 80px;
+    }
 
-.nftcard-top {
-    position: relative;
-}
+    .nftcard-top {
+        position: relative;
+    }
 
-.Footer {
-    display: none;
-}
+    .Footer {
+        display: none;
+    }
 
-.ResourceContainer {
-    display: none;
-}
+    .ResourceContainer {
+        display: none;
+    }
 
 }

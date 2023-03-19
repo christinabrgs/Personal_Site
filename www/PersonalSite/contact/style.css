@@ -258,8 +258,8 @@ background-color: #111111;
 
 form {
     text-align: center;
-    width: 50%;
-    margin: 40px auto;
+    width: 70%;
+    margin: 30px auto;
     border-radius: 5px;
     border: 1px solid lightgrey;
 }
@@ -277,9 +277,32 @@ textarea {
 }
 
 label p {
-    padding: 3px 0;
     color: #007dd1;
     font-weight: 600;
+}
+
+form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* edits for responsiveness */
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+.title button {
+    background: transparent;
+    border-style: none;
+    text-align: left;
+}
+
+.dropdown .home, .dropdown .market, .dropdown .blog {
+    display: none;
 }
 
 button {
@@ -289,15 +312,94 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 5px;
-    font-size: 1.1em;
-    font-weight: 600;
-    margin: 20px 0;
     width: 90%;
 
 }
 
 .secondemail {
     display: none;
+}
+
+
+
+
+
+
+
+/* Responsiveness */
+
+/* Drop Down Menu */
+@media (max-width:528px) {
+
+    .middle-nav {
+            display: none;
+        }
+
+    .navcontainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navcontainer .dropdown {
+        flex: 1;
+        background: #007dd1;
+        display: none;
+    }
+
+    .dropdown .home, .dropdown .market, .dropdown .blog {
+        display: block;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .title {
+        flex: 1;
+        width: 100%;
+        background-color: white;
+    }
+
+    .title .brand {
+        display: none;
+    }
+
+    .navcontainer .title .fa-solid.fa-bars {
+        display: block;
+        font-size: 1.4em;
+        color: #111111;
+        padding: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 437px) {
+
+    .Answer .secondemail {
+        display: none;
+    }
+    .Answer .SocialsLink {
+    padding: 10px;
+    font-size: 1.4em;
+    } 
+
+    div.Answer p.links {
+        padding: 10px 10px;
+
+    }
+
+    .AboutUs {
+        font-size: 1.8em;
+    }
+
+    .FAQExpandedContainer .Answer form label textarea {
+        height: 60px;
+    }
+    
+    form label {
+        padding: 5px 0;
+    }
 }
 
 
@@ -321,13 +423,11 @@ button {
     }
 
 
-    textarea {
-        height: 60px;
+    form label textarea {
+        height: 80px;
 
     }
-    form {
-        width: 90%;
-    }
+
     
     .SocialsLink {
         padding: 20px;
@@ -355,9 +455,6 @@ button {
     
     @media (max-width: 1300px) {
     
-    
-
-    
     .Footer {
         display: none;
     }
@@ -366,8 +463,12 @@ button {
         display: none;
     }
 
-    textarea {
-        height: 200px;
+    form {
+        width: 90%;
+    }
+
+    label textarea {
+        height: 160px;
 
     }
 
