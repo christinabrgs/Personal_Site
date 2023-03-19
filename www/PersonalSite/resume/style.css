@@ -28,13 +28,13 @@ body {
  }
  
  *::-webkit-scrollbar-track {
-   background: black;
+   background: rgb(0, 0, 0);
  }
  
  *::-webkit-scrollbar-thumb {
-   background-color: #111111;
+   background-color: #747474;
    border-radius: 20px;
-   border: 1px solid #007dd1;
+   border: 0px solid #007dd1;
  }
 
 
@@ -153,7 +153,7 @@ body {
 
 
 
-/* FAQ */
+/* Container */
 
 .AboutUs {
     flex: 1;
@@ -163,7 +163,7 @@ body {
     line-height: 150%;
     margin: 50px;
     text-align: center;
-    color: white;
+    color: #ffeea0;
     font-family: 'Paytone One', sans-serif;
 }
 
@@ -233,6 +233,7 @@ background-color: #111111;
     padding: 5px 30px;
     background: white;
     text-align: center;
+    display: flex;
 }
 
 .Answer img {
@@ -240,11 +241,68 @@ background-color: #111111;
     height: 440px;
 }
 
-/* .portTitle {
-    position: absolute;
-    top: 180px;
-    left: 125px;
-    font-weight: 600;
-    font-size: 1.5em;
+
+
+.intro {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.resume {
+    display: flex;
+}
+
+.expContainer {
+    padding: 30px 40px;
+    display: ;
+    flex: 2;
+}
+
+.experience {
+    flex:1;
+}
+
+.experience h3 {
+    background: #007dd1;
     color: white;
-} */
+    padding: 20px;
+}
+.expContainer h4 {
+    color: #007dd1;
+}
+
+.expContainer section span {
+    font-size: .9em;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+}
+
+.skills {
+    flex:1;
+    background: #007dd1;
+    color: white;
+    margin: 50px 20px;
+    padding: 0 30px;
+}
+
+.skills h3 {
+    background-color: #111111;
+    padding: 10px;
+}
+
+.skills h4 {
+    color: #111111;
+    font-weight: 600;
+}
+
+li {
+    font-size: .8em;
+}
+
+.licenses {
+    padding: 30px 40px;
+}
+
+.licenses h3 {
+    color: #007dd1;
+}
