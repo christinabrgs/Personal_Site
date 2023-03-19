@@ -306,3 +306,14 @@ li {
 .licenses h3 {
     color: #007dd1;
 }
+
+
+
+
+@media (max-width: 1300px) { 
+
+    .resume {
+        flex-direction: column;
+    }
+
+}

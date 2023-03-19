@@ -230,7 +230,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex:;
 }
 
 
@@ -280,3 +279,68 @@ background-color: #111111;
     font-size: 1.5em;
     color: white;
 } */
+
+@media (max-width: 800px) {
+
+    
+    .home {
+        padding-left: 40px;
+    }
+    
+    .FAQContainer {
+        flex-direction: column;
+    }
+
+    #resume {
+        display: none;
+    }
+    
+    .Answer {
+        height: 200px;
+        flex: .5;
+    }
+
+    .Answer img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .descrip {
+        display: none;
+    }
+
+}
+    
+    
+    
+    
+    @media (max-width: 1300px) {
+    
+    
+
+    
+    .Footer {
+        display: none;
+    }
+    
+    .ResourceContainer {
+        display: none;
+    }
+
+    .FAQContainer {
+        flex-direction: column;
+    }
+
+    .Answer {
+        height: 400px;
+        flex: .5;
+    }
+
+    .Answer img {
+        width: 100%;
+        height: 400px;
+    }
+    
+
+    
+    }

@@ -295,3 +295,81 @@ button {
     width: 90%;
 
 }
+
+.secondemail {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+
+    
+    .home {
+        padding-left: 40px;
+    }
+    
+    .FAQContainer {
+        flex-direction: column;
+    }
+
+    #resume {
+        display: none;
+    }
+    
+    .descrip {
+        display: none;
+    }
+
+
+    textarea {
+        height: 60px;
+
+    }
+    form {
+        width: 90%;
+    }
+    
+    .SocialsLink {
+        padding: 20px;
+    }
+
+    .Answer p {
+        font-size: .7em;
+        line-height: 120%;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .secondemail {
+        display: block;
+
+    
+    }
+
+}
+    
+    
+    
+    
+    @media (max-width: 1300px) {
+    
+    
+
+    
+    .Footer {
+        display: none;
+    }
+    
+    .ResourceContainer {
+        display: none;
+    }
+
+    textarea {
+        height: 200px;
+
+    }
+
+    
+    }

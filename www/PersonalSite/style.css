@@ -159,6 +159,10 @@ a:hover {
 }
 
 
+.middle-nav .SocialsLink {
+    display: none;
+}
+
 
 /* about */ 
 
@@ -953,21 +957,17 @@ color: white;
     color:white;
     font-size: .9em;
     font-weight: 600;
+    font-size: 1.3em;
     padding: 20px 20px 0 0px;
     color: white;
 }
-.SocialsIcon {
-    width:20px;
-    height:20px;
-    color: white;
-}
+
 
 .FooterRights {
     flex: 1;
     font-family:'sora', sans-serif;
     font-size: .8em;
     font-weight: 700;
-    padding-top: 110px;
     color: white;
 }
 
@@ -981,7 +981,12 @@ color: white;
     font-size: 1em;
     font-weight: 700;
     letter-spacing: 2px;
-    align-items: center;
+    align-items: right;
+    color: white;
+}
+
+.ResourceContainer p {
+    text-align: right;
 }
 
 .ResourceTable {
@@ -996,4 +1001,88 @@ color: white;
     font-size: 1.2em;
     font-weight: 700;
     padding-bottom: 15px;
+}
+
+#descriptwo {
+    display: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+.nftcard-top {
+    width: 350px;
+    height: 350px;
+}
+
+.cardimage {
+    width: 350px;
+    height: 350px;
+}
+
+#descriptwo {
+    display: none;
+}
+
+#resume {
+    display: none;
+}
+
+.home {
+    padding-left: 40px;
+}
+
+.EN {
+    display: none;
+}
+
+.home, .market, .blog {
+    display: none;
+}
+
+.middle-nav .SocialsLink {
+    display: block;
+    padding: 0 20px;
+}
+
+.fa-twitter {
+    padding-left: 30px;
+}
+
+}
+
+
+
+
+@media (max-width: 1300px) {
+
+
+    .headcontainer {
+        flex-direction: column-reverse;
+
+}
+.nftcardcontainer {
+    flex: 1;
+    padding: 0 ;
+}
+
+.about {
+    flex: 1;
+    margin-bottom: 80px;
+}
+
+.nftcard-top {
+    position: relative;
+}
+
+.Footer {
+    display: none;
+}
+
+.ResourceContainer {
+    display: none;
+}
+
 }
