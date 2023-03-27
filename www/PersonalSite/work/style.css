@@ -38,7 +38,6 @@ body {
    margin:0 auto;
    padding:0px;
    scrollbar-width: thin;
-    scrollbar-color: grey black;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -51,9 +50,9 @@ body {
  }
  
  *::-webkit-scrollbar-thumb {
-   background-color: #111111;
+   background-color: #007dd1;
    border-radius: 20px;
-   border: 1px solid #007dd1;
+   border: 0px solid #007dd1;
  }
 
 
