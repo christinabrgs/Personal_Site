@@ -189,7 +189,7 @@ a.home, a.market, a.blog {
 
 .about-title {
     font-family:'RocMedium', sans-serif;
-    font-size:5em;
+    font-size:4.5em;
     font-weight: 300;
     line-height: 100%;
     margin: 0;
@@ -202,7 +202,7 @@ a.home, a.market, a.blog {
 .about-descr {
     font-family: 'Sora', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
     line-height: 150%;
     margin: 0;
@@ -352,7 +352,7 @@ a.home, a.market, a.blog {
 
 
 .FooterContainer {  
-    Padding: 50px 0 75px 0;
+    Padding: 70px 0 60px 0;
     width: 65%;
     margin: 0 auto;
     color: white;
@@ -391,7 +391,7 @@ a.home, a.market, a.blog {
 
 .rights {
     text-align: right;
-    font-size: .7em;
+    font-size: .5em;
     font-weight: 400;
 }
 
@@ -435,14 +435,33 @@ a.home, a.market, a.blog {
 /* Responsive */
 
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
 
-    
-    .headcontainer .nftcardcontainer .nftcard-top .cardimage {
+    .head-background .headcontainer .nftcardcontainer .cardimage {
         width: 100%;
-        height: 100%;
+        height: 350px;
+    }
+    
+    .head-background .headcontainer .nftcardcontainer .cardimage .cardimagesize {
+        width: 100%;
+        height: 350px;
     }
 }
+
+
+@media (min-width: 450px) and (max-width: 580px) {
+
+    .nftcardcontainer .cardimage {
+        width: 100%;
+        height: 460px;
+    }
+    
+    .nftcardcontainer .cardimage .cardimagesize {
+        width: 100%;
+        height: 460px;
+    }
+}
+
 
 
 @media (max-width: 800px) {
